@@ -1,0 +1,9 @@
+<table>
+  <tr *ngFor="let item of jsonString"> <!--for loop for each element of jsonString-->
+    <td>{{item.file_id}}</td>
+    <!--td><img src='http://media.mw.metropolia.fi/wbma/uploads/{{item.filename}}' height="100px"/></td-->
+    <td><img [src]="'http://media.mw.metropolia.fi/wbma/uploads/'+item.filename" height="100px"/></td>
+    <td>{{item.title}}</td>
+    <td>{{item.description}}</td>
+  </tr>
+</table>
